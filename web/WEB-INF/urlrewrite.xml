@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.1//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.1.dtd">
+<urlrewrite>
+    <rule>
+        <note>
+            index页面跳转
+        </note>
+        <from>^/index.html$</from>
+        <to type="forward">/index.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            home页面跳转
+        </note>
+        <from>^/home.html$</from>
+        <to type="forward">/home.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            introduce页面跳转
+        </note>
+        <from>^/introduce.html$</from>
+        <to type="forward">/introduce.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            contactus页面跳转
+        </note>
+        <from>^/contactus.html$</from>
+        <to type="forward">/contactus.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            pastcase页面跳转
+        </note>
+        <from>^/pastcase_([a-zA-Z0-9]+).html$</from>
+        <to type="forward">/pastcase.jsp?type=$1</to>
+    </rule>
+
+    <rule>
+        <note>
+            pastcase_detail页面跳转
+        </note>
+        <from>^/pastcase_detail_([a-zA-Z0-9]+).html$</from>
+        <to type="forward">/pastcase_detail.jsp?id=$1</to>
+    </rule>
+
+    <rule>
+        <note>
+            solu页面跳转
+        </note>
+        <from>^/solu.html$</from>
+        <to type="forward">/solu.jsp</to>
+    </rule>
+
+    <rule>
+        <note>
+            solu_detail页面跳转
+        </note>
+        <from>^/solu_detail_([a-zA-Z0-9]+).html$</from>
+        <to type="forward">/solu_detail.jsp?id=$1</to>
+    </rule>
+
+</urlrewrite>

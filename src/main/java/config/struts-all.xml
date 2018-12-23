@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="admin" extends="struts-default" namespace="/admin">
+        <action name="/*" class="AdminAction" method="{1}"/>
+    </package>
+
+    <package name="case" extends="struts-default" namespace="/case">
+        <action name="/*" class="com.pwk.action.CaseAction" method="{1}"/>
+    </package>
+
+    <package name="solution" extends="struts-default" namespace="/solution">
+        <action name="/*" class="com.pwk.action.SolutionAction" method="{1}"/>
+    </package>
+
+    <package name="index" extends="struts-default" namespace="/index">
+        <action name="/*" class="com.pwk.action.IndexAction" method="{1}"/>
+    </package>
+</struts>
